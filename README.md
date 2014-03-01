@@ -3,7 +3,7 @@ quadtree
 
 Quadtree implementation for check 2D collisions with low CPU cost.
 
-Demo here: ![Demo](http://jsfiddle.net/sombra2eternity/vNS7m/)
+Demo here: http://jsfiddle.net/sombra2eternity/vNS7m/
 
   * Red squares represents Quadtree Sub-divisions.
   * Grey squares represents Quadtree registered items.
