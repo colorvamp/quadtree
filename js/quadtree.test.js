@@ -11,8 +11,10 @@ addEventListener('load',function(e){
 	canvas.addEventListener('mousemove',function(e){
 		var mx, my;
 
-		if(e.offsetX){mx = e.offsetX;my = e.offsetY;}
-		else if(e.layerX){mx = e.layerX;my = e.layerY;}
+		//if(e.offsetX){mx = e.offsetX;my = e.offsetY;}
+		//else if(e.layerX){mx = e.layerX;my = e.layerY;}
+		mx = e.clientX-canvas.offsetLeft;
+		my = e.clientY-canvas.offsetTop;
 
 		myHero.x = mx;
 		myHero.y = my;
