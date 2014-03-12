@@ -15,7 +15,7 @@ _quadtree.prototype.getHeight = function(){return this.height;};
 _quadtree.prototype.getTop = function(){return this.top;};
 _quadtree.prototype.getLeft = function(){return this.left;};
 _quadtree.prototype.isPointInside = function(p){if(p.x > this.left-1 && p.x < (this.left+this.width+1) && p.y > this.top-1 && p.y < (this.top+this.height+1)){return true;}return false;};
-_quadtree.prototype.isSquareInside = function(x,y,w,h){if(x > this.left-1 && x+w < (this.left+this.width+1) && y > this.top-1 && y+w < (this.top+this.height+1)){return true;}return false;};
+_quadtree.prototype.isSquareInside = function(x,y,w,h){if(x > this.left-1 && x+w < (this.left+this.width+1) && y > this.top-1 && y+h < (this.top+this.height+1)){return true;}return false;};
 _quadtree.prototype.getChilds = function(){
 	if(!this.spaces.length){return this.childs;}
 	var childs = [];
